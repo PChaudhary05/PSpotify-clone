@@ -65,11 +65,14 @@
 }
 .right{
     margin: 10px 0px;
+    position: relative;
 }
 .header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(37, 36, 36);
+    height: 80px;
+    
 }
 .header>*{
     padding: 20px;
@@ -82,14 +85,17 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    max-height: 76vh;
+    overflow-y: scroll;
 }
 .card{
-    width: 250px;
+    width: 200px;
     padding: 10px;
     border-radius: 5px;
     background-color: #252525;
+    position: relative;
 }
-.card img{
+.cardimage{
     width: 100%;
     object-fit: contain;
     border-radius: 5px;
@@ -99,4 +105,57 @@
 }
 .card > *{
     padding-top: 8px;
+}
+.play{
+    position: absolute;
+    right: 16px;
+    top: 160px;
+}
+.buttons{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+.buttons >*{
+    
+    
+}
+.btnsignup{
+    color: gray;
+    background-color: rgb(37, 36, 36);
+    border: none;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+.btnsignup:hover{
+    font-size: 17px;
+    color: whitesmoke;
+}
+.btnlogin{
+    border-radius: 50px;
+    width: 110px;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.btnlogin:hover{
+    font-size: 17px;
+}
+.player{
+    background-color: green;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+.playbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
 }

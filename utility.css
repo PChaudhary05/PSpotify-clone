@@ -30,3 +30,25 @@
 .p-1{
     padding: 10px;
 }
+/* For WebKit browsers */
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #333; /* Dark background color */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000; /* Black color */
+    border-radius: 10px;
+  }
+  
+  /* For Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #000 #333;
+  
+  /* For Internet Explorer and Edge */
+  * {
+    scrollbar-color: #000 #333;
+  }
